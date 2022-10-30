@@ -9,11 +9,11 @@
   <a href = "index.html"> AIDA 홈으로</a>
 
   <h3>Memory Card 앱 만들기 활동</h3>
-  <h4 style="color:DarkSlateGrey;">제작 동기</h4>
+  <h4 style="color:blue;">제작 동기</h4>
   정보 시간에 다루어 본 앱인벤터를 이용해 실용적인 앱을 만들어 보고 싶어서
   평상시 공부할 때도 사용할 수 있는 영단어 카드 암기 앱을 제작하기로 했다.
 
-  <h4 style="color:DarkSlateGrey;">계획</h4>
+  <h4 style="color:blue;">계획</h4>
   <p>사용자 로그인 정보를 저장하고, 사용자의 계정에 사용자가 만든 영단어 암기 카드 세트 또는
     국어 서술형 카드 세트를 저장할 수 있다. 학습에서 카드 선택을 통해 카드 세트를 선택한다.
     그 카드세트를 카드 학습하기, 뜻 맞추기의 두 가지 방법으로 학습하고
@@ -31,7 +31,7 @@
   _System_Friendinfo: 회원의 친구 정보 데이터<br>
   (영어 단어 목록 이름): 각 회원들의 모든 영어 단어 목록
 
-  <h4 style="color:DarkSlateGrey;">어려웠던 점</h4>
+  <h4 style="color:blue;">어려웠던 점</h4>
   <p>첫번째로 어려웠던 점은 무료 배포된 한영사전 open api를 찾기 힘들었다는 점이다.
     그리고 한영사전 open api를 찾는다고 해도 사전 전체로부터 랜덤 단어를 뽑으면 고등학교 수준과
     맞지 않은 영단어가 뽑혀 실용성이 없었다.
@@ -41,7 +41,7 @@
     학습 페이지에서 단어를 불러오는 과정에서 어려움을 겪었다. 하지만 형식에 익숙해지자 쉽게
     수정할 수 있었다.</p>
 
-  <h4 style="color:DarkSlateGrey;">베타테스트</h4>
+  <h4 style="color:blue;">베타테스트</h4>
   <p>친구들을 모아 통합평가/디자인/심미성/추가의견으로 나누어 만족도를 1점에서 5점까지
     평가할 수 있도록 폼을 만들어 베타테스트를 진행했다.</p>
 
@@ -60,13 +60,13 @@
     </ul>
   </p>
 
-  <h4 style="color:DarkSlateGrey;">최종 앱 사용방법</h4>
+  <h4 style="color:blue;">최종 앱 사용방법</h4>
   앱은 로그인, 계정, 학습, 세트 추가 화면까지 4개의 화면으로 이루어져 있다. <br>
   로그인 화면에서는 오늘의 단어를 볼 수 있고, 회원가입이나 로그인을 할 수 있다. <br>
   카드를 알면 o, 틀리면 x를 선택함으로써 알때까지 카드를 학습할 수 있고, 사용자의 입력을 통해 맞았는지 틀렸는지 확인할 수 있다.<br>
   또 계정 화면에서는 친구들을 보고 친구 추가를 할 수 있다.<br>
   
-  <h4 style="color:DarkSlateGrey;">앱 코딩 설명</h4>
+  <h4 style="color:blue;">앱 코딩 설명</h4>
   <h5>Screen1</h5>
   <img src="coding.jpg" width="100%"><br>
   <img src="coding.jpg" width="100%"><br>
@@ -75,7 +75,7 @@
   그리고 후에 할 친구 추가 동작을 위해 _System Friendinfo의 공간을 새로 만들어준다.<br><br>
   아이디와 비밀번호의 값이 데이터베이스에 저장된 값과 같으면 accountinfo 스크린이 열린다.
   
-  <h5 style="color:DarkSlateGrey;">accountinfo</h5>
+  <h5 style="color:blue;">accountinfo</h5>
   <img src="coding.jpg" width="100%"><br>
   <img src="coding.jpg" width="100%"><br>
   log out 버튼을 클릭하면 타이머가 활동화되고 ‘정말 로그아웃을 원하면 한 번 더 클릭하세요’라는 알림이 뜬다. <br>
@@ -86,7 +86,7 @@
   그리고 새로 추가된 친구와 기존 친구 목록을 보여준다.<br><br>
   아이디 공유(카카오톡)을 누르면 ‘나의 MemoryCard 아이디:~~~’라는 형식의 메시지가 작성된다. 
   
-  <h5 style="color:DarkSlateGrey;">practice</h5>
+  <h5 style="color:blue;">practice</h5>
   <img src="coding.jpg" width="100%"><br>
   <img src="coding.jpg" width="100%"><br>
   단어맞추기를 누르면 pop 소리가 제생이 되며 setcard2라는 함수가 실행된고 이 함수에 의해 랜덤으로 영어 단어가 뜬다.<br><br>
@@ -105,14 +105,14 @@
   만약 chosenlist에 있는 모든 영단어를 다 학습했으면 missed에 저장된 놓친 영단어가 표시된다.<br>
   놓친 영단어가 없으면 ‘없음’이라고 뜬다.
   
-  <h5 style="color:DarkSlateGrey;">addlist</h5>
+  <h5 style="color:blue;">addlist</h5>
   <img src="coding.jpg" width="100%"><br>
   <img src="coding.jpg" width="100%"><br>
   추가할 카드 세트 이름과 단어와 뜻을 입력하고 저장을 누르면 단어를 localword에 뜻을 localmeaning 변수에 두고<br>
   FirebaseDB1의 카드세트이름 부분에 해당 영+한국어 단어를 리스트에 추가한다.<br>
   이후 right 소리가 나고 ‘저장되었습니다’ 알림이 뜨게한다.
   
-  <h4 style="color:DarkSlateGrey;">느낀점</h4>
+  <h4 style="color:blue;">느낀점</h4>
   <p>
     이서영<br>
     앱을 만들며 앱인벤터의 새로운 기능을 여러가지 알 수 있어서 좋았다.<br>
