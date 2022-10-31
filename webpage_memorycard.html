@@ -81,8 +81,8 @@ log out 버튼을 클릭하면 타이머가 활동화되고 ‘정말 로그아�
 아이디 공유(카카오톡)을 누르면 ‘나의 MemoryCard 아이디:~~~’라는 형식의 메시지가 작성된다.<br><br>
 
 practice
-<img src="coding.jpg" width="100%">
-<img src="coding.jpg" width="100%">
+<img src="practiced.jpg" width="100%">
+<img src="practicec.jpg" width="100%">
 단어맞추기를 누르면 pop 소리가 제생이 되며 setcard2라는 함수가 실행된고 이 함수에 의해 랜덤으로 영어 단어가 뜬다. 
 빈칸에 해당 영어의 한국어를 쓰고 확인을 누르면 한국어와 ~~을 비교한 후 맞으면 right 소리가 나온 후 ‘정답입니다’ 알림이 뜨고 해당 영단어는 리스트에서 지운다. 틀렸다면 wrong 소리가 나온 후 ‘다시 시도해보세요’라는 알림이 뜨고 missed 리스트에 해당 영단어를 추가한다. 건너뛰기 버튼을 눌렀으면 missed 리스트에 해당 영단어를 넣고 타이머 호출? 만약 chosenlist에 남은 영단어가 없으면 놓친 단어가 뜬다. 놓친 단어가 없으면 ‘없음’이라고 표시된다. 
 돌아가기 버튼을 클릭한 경우 pop 소리와 함께 카드 선택 화면이 뜨고 영단어 카드 (name)을 선택할 수 있다. 선택한 영단어 카드를 firebase에서 태그로 찾는데 태그가 없을 경우 ‘error’가 표시된다. missed는 빈 리스트로 만들어준다. 
@@ -90,8 +90,8 @@ practice
 카드 학습을 선택하면 영어 단어가 뜨고 o를 클릭하면 chosenlist에서 해당 영단어가 지워지고 right 소리가 난다.  x를 클릭하면 이미 missed에 있는 영단어인지 확인하고 없으면 wrong소리와 함께 missed에 해당 영단어를 추가한다. x를 클릭한 영단어는 o를 클릭할 때까지 계속 뜬다. 만약 chosenlist에 있는 모든 영단어를 다 학습했으면 missed에 저장된 놓친 영단어가 표시된다. 놓친 영단어가 없으면 ‘없음’이라고 뜬다.
 
 addlist
-<img src="coding.jpg" width="100%">
-<img src="coding.jpg" width="100%">
+<img src="addlistd.jpg" width="100%">
+<img src="addlistc.jpg" width="100%">
 추가할 카드 세트 이름과 단어와 뜻을 입력하고 저장을 누르면 단어를 localword에 뜻을 localmeaning 변수에 두고 FirebaseDB1의 카드세트이름 부분에 해당 영+한국어 단어를 리스트에 추가한다. 이후  right 소리가 나고 ‘저장되었습니다’ 알림이 뜨게한다.
 
 느낀점
